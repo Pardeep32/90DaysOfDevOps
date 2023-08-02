@@ -1,0 +1,16 @@
+ubuntu@ip-172-31-26-176:~/A$ pwd
+/home/ubuntu/A
+ubuntu@ip-172-31-26-176:~/A$ ls -a
+.  ..  color.txt  deep.txt  deep1.txt  fruits.txt
+ubuntu@ip-172-31-26-176:~/A$ ls -la
+total 20
+drwxrwxr-x 2 ubuntu ubuntu 4096 Aug  2 15:59 .
+drwxr-x--- 7 ubuntu ubuntu 4096 Aug  2 15:59 ..
+-rw-rw-r-- 1 ubuntu ubuntu   17 Aug  2 15:59 color.txt
+-rw-rw-r-- 1 ubuntu ubuntu    0 Aug  2 15:47 deep.txt
+-rwx------ 1 ubuntu ubuntu   30 Aug  2 15:48 deep1.txt
+-rw-rw-r-- 1 ubuntu ubuntu   38 Aug  2 15:56 fruits.txt
+ubuntu@ip-172-31-26-176:~/A$ mkdir -p A/B/c/D
+ubuntu@ip-172-31-26-176:~/A$ cd A
+ubuntu@ip-172-31-26-176:~/A/A$ cd B
+ubuntu@ip-172-31-26-176:~/A/A/B$ cd C
