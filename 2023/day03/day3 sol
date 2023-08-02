@@ -1,0 +1,75 @@
+ubuntu@ip-172-31-26-176:~/A$ touch deep1.txt
+ubuntu@ip-172-31-26-176:~/A$ vim deep1.txt
+ubuntu@ip-172-31-26-176:~/A$ cat deep1.txt
+day 2 challenge
+by shubum sir
+ubuntu@ip-172-31-26-176:~/A$ ls -la
+total 16
+drwxrwxr-x 3 ubuntu ubuntu 4096 Aug  2 15:48 .
+drwxr-x--- 7 ubuntu ubuntu 4096 Aug  2 15:48 ..
+drwxrwxr-x 3 ubuntu ubuntu 4096 Aug  2 15:37 B
+-rw-rw-r-- 1 ubuntu ubuntu    0 Aug  2 15:47 deep.txt
+-rw-rw-r-- 1 ubuntu ubuntu   30 Aug  2 15:48 deep1.txt
+ubuntu@ip-172-31-26-176:~/A$ chmod 700 deep1.txt
+ubuntu@ip-172-31-26-176:~/A$ ls -la
+total 16
+drwxrwxr-x 3 ubuntu ubuntu 4096 Aug  2 15:48 .
+drwxr-x--- 7 ubuntu ubuntu 4096 Aug  2 15:48 ..
+drwxrwxr-x 3 ubuntu ubuntu 4096 Aug  2 15:37 B
+-rw-rw-r-- 1 ubuntu ubuntu    0 Aug  2 15:47 deep.txt
+-rwx------ 1 ubuntu ubuntu   30 Aug  2 15:48 deep1.txt
+ubuntu@ip-172-31-26-176:~/A$ rmdir B
+rmdir: failed to remove 'B': Directory not empty
+ubuntu@ip-172-31-26-176:~/A$ rmdir D
+rmdir: failed to remove 'D': No such file or directory
+ubuntu@ip-172-31-26-176:~/A$ rmdir C
+rmdir: failed to remove 'C': No such file or directory
+ubuntu@ip-172-31-26-176:~/A$ ls
+B  deep.txt  deep1.txt
+ubuntu@ip-172-31-26-176:~/A$ rm -r  D
+rm: cannot remove 'D': No such file or directory
+ubuntu@ip-172-31-26-176:~/A$ rm -r B 
+ubuntu@ip-172-31-26-176:~/A$ ls
+deep.txt  deep1.txt
+ubuntu@ip-172-31-26-176:~/A$ vim fruits.txt
+ubuntu@ip-172-31-26-176:~/A$ cat fruits.txt 
+apple
+mango 
+grapes
+ubuntu@ip-172-31-26-176:~/A$ vim fruits.txt 
+ubuntu@ip-172-31-26-176:~/A$ head 3 fruits.txt 
+head: cannot open '3' for reading: No such file or directory
+==> fruits.txt <==
+apple
+mango 
+grape
+cherry
+kiwi
+banada
+ubuntu@ip-172-31-26-176:~/A$ head -n 3 fruits.txt 
+apple
+mango 
+grape
+ubuntu@ip-172-31-26-176:~/A$ tail -n 3 fruits.txt 
+cherry
+kiwi
+banada
+ubuntu@ip-172-31-26-176:~/A$ vim color.txt
+ubuntu@ip-172-31-26-176:~/A$ cat color.txt 
+red
+yellow
+blue
+
+ubuntu@ip-172-31-26-176:~/A$ diff fruits.txt color.txt 
+1,6c1,4
+< apple
+< mango 
+< grape
+< cherry
+< kiwi
+< banada
+---
+> red
+> yellow
+> blue
+> 
