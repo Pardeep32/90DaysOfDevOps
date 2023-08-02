@@ -1,0 +1,23 @@
+
+Here's a list of some common Linux commands with a simple stem to perform basic tasks:
+
+ls: List files and directories in the current directory.
+cd: Change directory (e.g., cd /path/to/directory).
+pwd: Print working directory (displays the current directory path).
+mkdir: Create a new directory (e.g., mkdir new_directory).
+touch: Create a new empty file (e.g., touch new_file.txt).
+rm: Remove files or directories (e.g., rm file.txt, rm -r directory for recursive deletion).
+cp: Copy files or directories (e.g., cp file.txt /path/to/destination, cp -r directory /path/to/destination for recursive copy).
+mv: Move or rename files or directories (e.g., mv file.txt /path/to/destination, mv old_name new_name).
+cat: Concatenate and display file content (e.g., cat file.txt).
+echo: Print a message or value to the terminal (e.g., echo "Hello, World!").
+grep: Search for a pattern in files (e.g., grep "keyword" file.txt).
+man: Display the manual page for a command (e.g., man ls).
+chmod: Change file permissions (e.g., chmod +x file.sh to add execute permission).
+chown: Change file ownership (e.g., chown user:group file.txt).
+ps: Display information about running processes.
+kill: Terminate a process (e.g., kill PID where PID is the process ID).
+df: Display disk space usage.
+free: Display system memory usage.
+tar: Archive files (e.g., tar -cvzf archive.tar.gz files).
+unzip: Extract files from a ZIP archive (e.g., unzip archive.zip).
